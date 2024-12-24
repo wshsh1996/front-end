@@ -1,14 +1,6 @@
-## 自整理前端小知识点
-* 本人仍在积极整理中，还请见谅，如有问题，请发PR，万分感谢 :stuck_out_tongue_closed_eyes:
-* PS:is free :grin: 
-* 如有喜欢，请尽情用 `star` 羞辱我
-* 获取最新文章请关注公众号：全栈道路
-* 如需**字节跳动 & 百度 & 京东 & 腾讯 & 美团**极速内推，请关注公众号获取内推方式，您将享受VVIP级快速服务
+## 收录了programmer-zhang前辈的前端小知识点
+* 非常感谢programmer-zhang前辈的知识总结
 
-<div style="width:100%;" align="center">
-	<img src="./images/wechat-mp-l.png" style="width:80%;">
-	<img src="https://ghchart.rshah.org/programmer-zhang" style="width:80%">
-</div>
 
 ## HTML & CSS相关 :european_castle:
 > [10分钟搞定 Flex 布局](https://github.com/programmer-zhang/front-end/tree/master/profiles/HTML_flex.md)
