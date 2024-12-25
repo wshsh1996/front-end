@@ -1,4 +1,4 @@
-## 收录了programmer-zhang前辈的前端小知识点
+## 收录了programmer-zhang前辈的部分前端知识点
 * 非常感谢programmer-zhang前辈的知识总结
 
 
@@ -104,21 +104,10 @@
 
 > [Vue 源码系列-响应式数据](https://github.com/programmer-zhang/front-end/tree/master/profiles/vue_响应式流程.md)
 
-> [前端使用 node 实现 读写 Excel文件](https://github.com/programmer-zhang/front-end/tree/master/profiles/node-xlsx.md)
-
-> [前端使用 node 批量下载网络图片](https://github.com/programmer-zhang/front-end/tree/master/profiles/node_download_image.md)
-
 ## 持续构建 Build Processing :articulated_lorry:
-
 > [Git 使用指南](https://github.com/programmer-zhang/front-end/tree/master/profiles/git.md)
 
 ## 软件工程 Software Engineering :wrench:
-> [敏捷开发](https://github.com/programmer-zhang/front-end/tree/master/profiles/敏捷开发.md)
- 
-> [前端自动化构建](https://github.com/programmer-zhang/front-end/tree/master/profiles/前端自动化构建.md)
- 
-> [第三方前端性能监控(外链资料)](https://docs.sentry.io/quickstart/)
-
 > [前端性能优化(一): HTML、CSS、JS篇](https://github.com/programmer-zhang/front-end/tree/master/profiles/[前端性能优化]HTML、CSS、JS篇.md)
 
 > [前端性能优化(二): 页面加载速度优化](https://github.com/programmer-zhang/front-end/tree/master/profiles/[前端性能优化]页面加载速度优化.md)
@@ -127,34 +116,14 @@
 
 > [Chorme 开发者工具 的各种骚技巧](https://github.com/programmer-zhang/front-end/tree/master/profiles/Chrome-Devtools.md)
 
-> [前端安全](https://github.com/programmer-zhang/front-end/tree/master/profiles/frontend_security.md)
-
-> [记一次惨痛的 Vue-cli + VueX + SSR 经历](https://github.com/programmer-zhang/front-end/tree/master/profiles/vue_project-summary.md)
-
-## 微信开发&小程序开发相关 WeChat&Mini Apps :envelope:
-> [微信小程序开发遇到的Error](https://github.com/programmer-zhang/front-end/tree/master/profiles/wechat_error.md)
-
-> [微信小程序攻略(外链资料)](https://juejin.im/post/5b8fd1416fb9a05cf3710690?utm_source=gold_browser_extension)
-
-> [微信内嵌H5页面授权和分享](https://github.com/programmer-zhang/front-end/tree/master/profiles/wechat_auth.md)
-
-> [微信内置浏览器动态生成二维码并长按识别](https://github.com/programmer-zhang/front-end/tree/master/profiles/wechat_qrcode.md)
-
-> [微信小程序云开发改造](https://github.com/programmer-zhang/front-end/tree/master/profiles/wechat_cloud.md)
-
-> [微信 JS API 支付](https://github.com/programmer-zhang/front-end/tree/master/profiles/wechat_pay.md)
-
-## 编码实践 Coding Demo :paperclip:
-> [前端实现条形码扫描的小方案](https://github.com/programmer-zhang/front-end/tree/master/profiles/quagga.js.md)
-> 
+## uniapp小程序开发相关 Uinapp Mini Apps :envelope:
+ 
 ## 其他 Just Fun :hankey:
-> [Github 开源项目记录](https://github.com/programmer-zhang/front-end/tree/master/profiles/github_open-source-project.md)
-
-> [攻城狮，你真的会使用搜索引擎么?](https://github.com/programmer-zhang/front-end/tree/master/profiles/search_tips.md)
-
 > [程序员保佑指南 :pray: ](https://github.com/programmer-zhang/front-end/tree/master/profiles/程序员保佑指南.md)
 
 > [Chrome 开发者工具各种骚技巧(外链资料)](https://juejin.im/post/5af53823f265da0b75282b0f?utm_source=gold_browser_extension)
+
+> [提高工程师开发和学习效率的网站&工具]()
 
 
 
