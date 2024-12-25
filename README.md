@@ -100,6 +100,8 @@
 
 > [Vue 源码系列-响应式数据](https://github.com/wshsh1996/front-end/tree/master/profiles/vue_响应式流程.md)
 
+> [Vite vite.config.ts参数及配置项](https://github.com/wshsh1996/vue-pc-project/blob/main/vite.config.ts)
+
 ## 持续构建 Build Processing :articulated_lorry:
 > [Git 使用指南](https://github.com/wshsh1996/front-end/tree/master/profiles/git.md)
 
