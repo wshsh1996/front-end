@@ -60,6 +60,8 @@ border-image: source slice width outset repeat;
 
 ```
 
+![](../../images/HTML&CSS/border-image/source-url.png)
+
 ### 切割方式 (`slice`)
 
 * `slice` 参数定义如何切割图像以适应边框。它有四个值，分别表示上、右、下、左的切割宽度。
