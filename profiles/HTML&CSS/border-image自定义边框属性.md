@@ -66,7 +66,6 @@ border-image: source slice width outset repeat;
 
 > 此时img.box 的边框样式如下：
 
-
 ![](../../images/HTML&CSS/border-image/source-url.png)
 
 ### 切割方式 (`slice`)
