@@ -63,6 +63,7 @@
 
 ### 使用 meta viewport 解决
 * viewport 结合rem解决像素比问题，将细线的粗度自动按照比例进行缩放。
+* `设置方法[https://github.com/wshsh1996/vue-pc-project/blob/main/index.html]`
 
 ```
 // 在devicePixelRatio = 2 的屏幕下设置meta
