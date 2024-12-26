@@ -28,6 +28,10 @@ border-image: source slice width outset repeat;
 
 ### 图像源 (`source`)
 
+> 图像文件的背景图片
+
+![](../../images/HTML&CSS/border-image/bgi.png)
+
 * `source` 参数可以是以下之一：
 	* `none`：表示不使用图像，边框将遵循 border-style 的定义。
 	* `url('@/assets/images/bgi.png')`  图像文件的 URL：。
@@ -60,11 +64,11 @@ border-image: source slice width outset repeat;
 
 ```
 
-> 边框图像源
+> none边框样式如下：
 
-![](../../images/HTML&CSS/border-image/bgi.png)
+![](../../images/HTML&CSS/border-image/source-url.png)
 
-> 此时img.box 的边框样式如下：
+> url('@/assets/images/bgi.png')样式如下：
 
 ![](../../images/HTML&CSS/border-image/source-url.png)
 
