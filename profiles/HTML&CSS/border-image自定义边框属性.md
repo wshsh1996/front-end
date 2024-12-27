@@ -38,24 +38,32 @@ border-image: source slice width outset repeat;
 
 * `slice` 参数定义如何切割图像以适应边框。它有四个值，分别表示上、右、下、左的切割宽度。
     * `number `: 表示切割的宽度为指定数量的像素。**千万不要给数值带单位哦。**
-    * `percentage`：表示切割的宽度为指定百分比的宽度。
+    * `percentage`: 表示切割的宽度为指定百分比的宽度。
+    * 值（数值、百分比）可以写 1-4 个，理解方式参考 padding 和 margin 的值。 
+    * `fill` “填充”: 源图片 9 宫格的中心块将作为该元素的背景。
 
 ![](../../images/HTML&CSS/border-image/border-image-slice.gif)
 
 ### 边框宽度 (`width`)
 
-* `width` 参数设置边框的宽度。可以是一个单一值，也可以是四个值，分别表示上、右、下、左的宽度。
+* `border-image-width` 参数的四种类型:
+  * `length`: 带 px, em, in … 单位的尺寸值。
+  * `percentage`: 百分比。
+  * `number`: 不带单位的数字；它表示 border-width 的倍数。
+  * `auto`: 使用 auto， border-image-width 将会使用 border-image-slice 的值
+	
+border-image-width的缺省值是 number 类型：1，即边框图片的宽度跟边框的宽度一致。
 
 ```
-border-image: url(border.png) 30 30 30 30 round;
+border-image-width: [ <length> | <percentage> | <number> | auto ]{1,4}
 ```
 
 ### 外边距 (`outset`)
 
-* `outset` 参数定义了边框图像的外边距，即边框图像与元素内容的距离。
+* `outset` 定义边框图像可超出边框的大小。
 
 ```
-border-image: url(border.png) 30 30 30 30 outset;
+border-image-outset:[ <length> | <number> ]{1,4};
 ```
 
 ### 重复方式 (`repeat`)
@@ -63,25 +71,15 @@ border-image: url(border.png) 30 30 30 30 outset;
 * `repeat` 参数控制边框图像的重复方式。它有以下几个选项：
 
 	* `stretch`: 默认值，拉伸图像以填充边框。
-	* `repeat`: 重复图像以填充边框。
-	* `round`: 拉伸或缩小图像以填充边框。
-	* `space`: 在图像之间添加间隙以填充边框。
+	* `repeat`: 重复图像以填充边框,可能出现图片不完整情况。
+	* `round`: 平铺图像，当不能整数次平铺时，根据情况放大或缩小图像。
+	* `space`: 平铺图像 。当不能整数次平铺时，会用空白间隙填充在图像周围（不会放大或缩小图像）。
 
-```css
-border-image: url(border.png) 30 30 30 30 round;
+```
+border-image-repeat:[ stretch | repeat | round | space ]{1,2} ;
 ```
 
 ## 完整示例
 
-* 以下是一个完整的示例，演示如何使用 `border-image` 创建自定义边框：
+[点击查看完成实例](https://github.com/wshsh1996/vue-pc-project/blob/main/src/views/border-image/index.vue)
 
-```css
-.custom-border {
-  border-image: url(border.png) 30 30 30 30 round;
-  border-width: 30px;
-  border-image-outset: 10px;
-  border-image-repeat: round;
-}
-```
-
-以上代码将为类名为 `.custom-border` 的元素创建一个自定义边框。
