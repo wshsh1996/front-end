@@ -28,57 +28,19 @@ border-image: source slice width outset repeat;
 
 ### 图像源 (`source`)
 
-> 图像文件的背景图片
-
-![](../../images/HTML&CSS/border-image/bgi.png)
-
 * `source` 参数可以是以下之一：
 	* `none`：表示不使用图像，边框将遵循 border-style 的定义。
 	* `url('@/assets/images/bgi.png')`  图像文件的 URL：。
-    * `linear-gradient(to right, red, orange)`：表示使用线性渐变作为边框。
-	* `current-color`：表示使用当前元素的文本颜色作为边框颜色。
-
-```
-<template>
-	<div class="box">
-        <img src="@/assets/images/meinv.png" class="img-box" alt="" />
- 	</div>
-</template>
-<style scoped lang="scss">
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  background-color: #000;
-  .img-box {
-    width: 460px;
-    object-fit: cover;
-    border: 30px #000 solid; // 设置边框宽度和样式，不然border-image不起作用
-    border-image-source: url('@/assets/images/bgi.png');
-  }
-}
-</style>
-
-```
-
-> none边框样式如下：
-
-![](../../images/HTML&CSS/border-image/source-url.png)
-
-> url('@/assets/images/bgi.png')样式如下：
-
-![](../../images/HTML&CSS/border-image/source-url.png)
+    * `linear-gradient(to right, red, orange)`：表示使用线性渐变色作为边框。
+	* `repeating-linear-gradient(45deg, transparent, #4d9f0c 20px)`：表示创建重复的线性渐变背景的函数作为边框颜色。
 
 ### 切割方式 (`slice`)
 
 * `slice` 参数定义如何切割图像以适应边框。它有四个值，分别表示上、右、下、左的切割宽度。
+    * `number `: 表示切割的宽度为指定数量的像素。**千万不要给数值带单位哦。**
+    * `percentage`：表示切割的宽度为指定百分比的宽度。
 
-```
-border-image: url(border.png) 30 30 30 30 round;
-```
+![](../../images/HTML&CSS/border-image/border-image-slice.gif)
 
 ### 边框宽度 (`width`)
 
