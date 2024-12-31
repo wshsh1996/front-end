@@ -29,57 +29,35 @@ console.log(max, min) // 7,1
 
 ### 浮点数取整
 * 丢弃小数部分,保留整数部分
-	* `parseInt(7/2)`
+	* `parseInt(7/2)`  // 输出: 3
 * 向上取整,有小数就整数部分加1
-	* `Math.ceil(7/2)`
-* 四舍五入
-	* `Math.round(7/2)`
-* 向下取整
-	* `Math.floor(7/2)`
+	* `Math.ceil(7/2)`  // 输出: 4
+* 四舍五入,将数字四舍五入为最接近的整数
+	* `Math.round(7/2)`  // 输出: 4
+* 向下取整,有小数就整数部分加1
+	* `Math.floor(7/2)`  // 输出: 3
 * 注：都是JS内置对象
 
 ### 数组去重
 
 * ES6
+* new Set(arr2) 创建一个 Set 对象，Set 对象会自动去除重复的元素。对于 arr2 = [1,1,1,2,2,2,3,4]，Set 对象会变成 {1, 2, 3, 4}。
+* Array.from(new Set(arr2)) 将 Set 对象转换回数组，结果是 [1, 2, 3, 4]。
 
 ```
 arr2=[1,1,1,2,2,2,3,4]
 arr1 = Array.from(new Set(arr2)) //arr1=[1,2,3,4]
 ```
-* push( )去重
+* filter结合indexOf去重
 
 ```
-let arr3 = [];  
-for(var i = 0; i < arr.length; i++) {  
-    (function(i) {  
-        if(arr3.indexOf(arr[i]) == -1) { //不包含该值则返回-1  
-            arr3.push(arr[i]);  
-        }  
-    }(i))  
-}  
-console.log(arr3); 
-//如果当前数组的第i项在当前数组中第一次出现的位置不是i，那么表示第i项是重复的，忽略掉。否则存入结果数组  
-let arr4 = [arr[0]];  
-for(var i = 1; i < arr.length; i++) {  
-    (function(i) {  
-        if(arr.indexOf(arr[i]) == i) {  
-            arr4.push(arr[i]);  
-        }  
-    }(i))  
-}  
-console.log(arr4);  
-```
-* sort( )去重
+et arr = [1, 2, 2, 3, 4, 4, 5];
+let uniqueArr = arr.filter((item, index) => arr.indexOf(item) === index);
 
-```
-let arrSort = arr.sort();  
-let arr5 = [];  
-for(let i = 0; i< arrSort.length; i++) {  
-    if(arrSort[i] != arrSort[i+1]) {  
-        arr5.push(arrSort[i]);  
-    }  
-}  
-console.log(arr5);  
+console.log(uniqueArr); // 输出: [1, 2, 3, 4, 5]
+// filter 方法会遍历数组中的每个元素，并根据提供的回调函数的返回值来决定是否保留该元素filter 方法会遍历数组中的每个元素，并根据提供的回调函数的返回值来决定是否保留该元素
+// indexOf 方法可以用来检查元素在数组中第一次出现的位置。结合这两者，可以实现去重的效果。 
+
 ```
 * splice( )去重
 
@@ -250,6 +228,7 @@ let reg = /\d+\.\d+\.\d+\.\d+/;
 // 匹配中文
 let reg = /^[\u4e00-\u9fa5]*$/;
 ```
+[更多正则表达式](https://raw.githubusercontent.com/any86/any-rule/master/packages/www/src/RULES.js)
 
 ### JS判断字符串是否全是空格
 
